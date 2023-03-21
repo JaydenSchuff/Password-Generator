@@ -1,5 +1,8 @@
 # Password-Generator
 
+## Description
+
+This is a password generator and its function is to create a randomized password with specific wanted values.
 
 
 
