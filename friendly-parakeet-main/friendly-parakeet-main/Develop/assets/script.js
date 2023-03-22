@@ -8,13 +8,13 @@ var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "1234567890";
 var special = "!@#$%^&*()_-+=[]{}:;<>,.?/|~`"
-var optionsVariable = "";
+var options = "";
 
 
 function generatePassword() {
   password.value === "";
   var randomString = "";
-  var optionsVariable = "";
+  var options = "";
 
   
   
@@ -39,36 +39,36 @@ function generatePassword() {
 
 //Adds which variables it would like to include in password
 if (askLowercase) {
-  optionsVariable += lowercase;
+  options += lowercase;
 }
 else{
-  optionsVariable += "";
+  options += "";
 }
 
 if (askUppercase) {
-  optionsVariable += uppercase;
+  options += uppercase;
 }
 else{
-  optionsVariable += "";
+  options += "";
 }
 
 if (askNumbers) {
-  optionsVariable += numbers;
+  options += numbers;
 }
 else{
-  optionsVariable += "";
+  options += "";
 }
 
 if (askSpecial) {
-  optionsVariable += special;
+  options += special;
 }
 else{
-  optionsVariable += "";
+  options += "";
 }
 // Generates a random password
 for (var i = 0; i < passwordLength; i++) {
   // Selects a random character value from the string until it is the desired length
-  randomString += optionsVariable.charAt(Math.floor(Math.random() * optionsVariable.length));
+  randomString += options.charAt(Math.floor(Math.random() * options.length));
 }
 password.value = randomString;
 }
