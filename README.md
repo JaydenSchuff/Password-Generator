@@ -3,6 +3,7 @@
 ## Description
 
 This is a password generator and its function is to create a randomized password with specific wanted values.
+I am creating this project for an assignment for a college class.
 
 
 
