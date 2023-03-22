@@ -31,11 +31,7 @@ function generatePassword() {
   //Makes sure atleast one is selected
   else if (askLowercase == false && askUppercase == false && askNumbers == false && askSpecial == false) {
     alert("You must chose at least one password criteria.");
-    var askLowercase = confirm("Do you want your password to contain lowercase letters?");
-    var askUppercase = confirm("Do you want your password to contain uppercase letters?");
-    var askNumbers = confirm("Do you want your password to contain numbers?");
-    var askSpecial = confirm("Do you want your password to contain special characters?");
-}
+  }
 
 //Adds which variables it would like to include in password
 if (askLowercase) {
