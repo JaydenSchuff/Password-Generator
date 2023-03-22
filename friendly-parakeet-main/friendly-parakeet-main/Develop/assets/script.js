@@ -17,8 +17,9 @@ function generatePassword() {
   var optionsVariable = "";
 
   
-  var askLowercase = confirm("Would you like lowercase characters?");
-  var askUppercase = confirm("Would you like uppercase letters?");
+  
+    var askLowercase = confirm("Would you like lowercase letters?");
+    var askUppercase = confirm("Would you like uppercase letters?");
     var askNumbers = confirm("Would you like numbers?");
     var askSpecial = confirm("Would you like a special character?");
     var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
@@ -28,7 +29,7 @@ function generatePassword() {
       var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
   }
   //Makes sure atleast one is selected
-  else if (askLowercase === false && askUppercase === false && askNumbers === false && askSpecial === false) {
+  else if (askLowercase == false && askUppercase == false && askNumbers == false && askSpecial == false) {
     alert("You must chose at least one password criteria.");
     var askLowercase = confirm("Do you want your password to contain lowercase letters?");
     var askUppercase = confirm("Do you want your password to contain uppercase letters?");
